@@ -3,6 +3,9 @@ import HomeView from '../views/HomeView.vue'
 // import JoinAndLoginView from '../views/JoinAndLoginView.vue'
 import FormView from '../views/FormView.vue'
 import LoginView from '../views/LoginView.vue'
+import AllFormView from '../views/AllFormView.vue'
+import FormDetailsView from '../views/FormDetailsView.vue'
+import PostFormView from '../views/PostFormView.vue'
 
 const routes = [
   {
@@ -29,6 +32,18 @@ const routes = [
   {
     path: '/login',
     component: LoginView
+  },
+  {
+    path: '/forms',
+    component: AllFormView
+  },
+  {
+    path: '/forms/:formId',
+    component: FormDetailsView
+  },
+  {
+    path: '/forms/create',
+    component: PostFormView
   }
 ]
 

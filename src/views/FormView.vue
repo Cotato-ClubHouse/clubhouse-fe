@@ -2,7 +2,7 @@
 <template>
     <div class="group">
           <input type="submit" class="button" value="Sign Up" @click.prevent = "reissue">
-        </div>
+    </div>
 </template>
 
 <script>
